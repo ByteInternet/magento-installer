@@ -136,7 +136,7 @@ CREATE TABLE `admin_user` (
 
 LOCK TABLES `admin_user` WRITE;
 /*!40000 ALTER TABLE `admin_user` DISABLE KEYS */;
-INSERT INTO `admin_user` VALUES (1,'||admin_firstname||','||admin_lastname||','||admin_email||','admin','2d40c6991efdd88b699754c4bc462204:hR','2012-08-30 10:30:44','2012-08-30 10:30:44',NULL,0,0,1,'N;',NULL,NULL);
+INSERT INTO `admin_user` VALUES (1,'||admin_firstname||','||admin_lastname||','||admin_email||','admin','||admin_pass||','2012-08-30 10:30:44','2012-08-30 10:30:44',NULL,0,0,1,'N;',NULL,NULL);
 /*!40000 ALTER TABLE `admin_user` ENABLE KEYS */;
 UNLOCK TABLES;
 
