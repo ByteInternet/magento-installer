@@ -3697,7 +3697,9 @@ CREATE TABLE `core_cache_option` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Cache Options';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+LOCK TABLES `core_cache_option` WRITE;
 INSERT INTO `core_cache_option` VALUES ('aitsys', 0), ('block_html', 0), ('collections', 0), ('config', 0), ('config_api', 0), ('config_api2', 0), ('eav', 0), ('layout', 0), ('translate', 0);
+UNLOCK TABLES;
 
 --
 -- Dumping data for table `core_cache_option`
